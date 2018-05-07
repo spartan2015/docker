@@ -1,0 +1,12 @@
+version: "3.0"
+
+services:
+  ci-dev:
+    build: java
+    ports:
+      - "8080:8080"
+    environment:
+      - var=value
+    container_name: ci-dev
+    volumes:
+      - /C/Users/eXpert/Desktop/docker/ciplugins-devspaces-experiment/:/opt/ci-dev
